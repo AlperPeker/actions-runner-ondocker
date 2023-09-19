@@ -1,0 +1,19 @@
+services:
+  runner:
+    image: actions-runner
+    restart: always
+    stop_signal: TERM
+    environment:
+      - SERVER_URL=**********
+      - ORGANIZATION=*********
+      - ACCESS_TOKEN=*********
+    deploy:
+      mode: replicated
+      replicas: 10
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 250M
+        reservations:
+          cpus: '0.2'
+          memory: 200M
