@@ -3,7 +3,6 @@
 The purpose of the repo is to create as many self-hosted GitHub actions-runners as system resources allow with a single command and include them in your organization.
 
 This process is completed in 3 stages and uses a file for each stage.
---------------
 
 ## FILES
 
